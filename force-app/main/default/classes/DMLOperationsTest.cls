@@ -38,8 +38,7 @@ public with sharing class DMLOperationsTest {
         Assert.areEqual('Test Account', testAccount.Name, 'Account name is incorrect.');
         Assert.areEqual('Technology', testAccount.Industry, 'Account industry is incorrect.');
     }
-
-
+    
     @IsTest
     static void testInsertNewContact() {
         // Create a test Account first
@@ -60,6 +59,8 @@ public with sharing class DMLOperationsTest {
         System.assertEquals(newContactId, retrievedContact.Id, 'The IDs should match');
         System.assertEquals(testAccount.Id, retrievedContact.AccountId, 'The Account IDs should match');
     }
+
+   
     
     @IsTest
     static void testUpdateContactLastName() {
